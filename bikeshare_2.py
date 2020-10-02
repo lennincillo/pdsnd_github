@@ -5,6 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+              #this 2 variables will be used to check if the user insert a correct inputs
 weak = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday','sunday']
 months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
