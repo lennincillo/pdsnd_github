@@ -95,7 +95,6 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
 
     # display the most common month
 
@@ -113,15 +112,13 @@ def time_stats(df):
     print('The most popular start time in this city was {} \n'.format(popular_hour))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
 
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
+
 
     # display most commonly used start station
     popular_start_station= df['Start Station'].mode()[0]
@@ -136,8 +133,6 @@ def station_stats(df):
     popular_travel= df['travel'].mode()[0]
     print('The most popular travel in this city was {} \n'.format(popular_travel))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
 
 
 
@@ -158,8 +153,7 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
-    start_time = time.time()
+
     try:
         # Display counts of user types
         user_types = df['User Type'].value_counts()
@@ -181,8 +175,7 @@ def user_stats(df):
         print('The most common Birth Year in this city was {}, being {} the most earliest and {} the most recently \n'.format(popular_common_yb,earliest_yb,recent_yb))
     except:
         print("There is not data for birthday statistic")
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+
 
 
 def main():
