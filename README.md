@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+The file README was created 30/09/2020
 
 ### Project Title
-Replace the Project Title
+bikeshare_2
 
 ### Description
-Describe what your project is about and what it does
+create an interactive program that helps to analyze the travel database in 3 cities, obtaining descriptive statistics of population, travel time and most used routes
 
 ### Files used
-Include the files used
+bikeshare_2.py
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
